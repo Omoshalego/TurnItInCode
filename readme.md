@@ -22,11 +22,16 @@ To orchestrate running all parts of this service, docker and docker compose are 
 
 # Tasks:
 * Currently the java-edge service is making an API call per membership to fetch the user details. Refactor the java-edge service to use the `/api.php/users` endpoint to fetch all the users in one request rather than fetching the users individually.
+              Archieved
   * Make sure to fix any broken tests.
+     My test is failing due to the processing of conversion of stream of users to an array. I was still dubugging this issue at the time of submitting the test.
   * Make sure any docs are updated appropriately.
+          Archieved
   * The response from the java-edge service should not change.
+          Archieved
 * Searching for members by email is currently case sensitive. Update the search in the react-frontend to be case insensitive.
 * The close (x) button on the user details modal doesn't currently function properly. Identify the problem and make the fix.
+       Archieved
 
 # Setup
 
